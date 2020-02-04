@@ -22,6 +22,16 @@ h3 {
 	color: #458B79;
 	font-family: 'Anton', sans-serif;
 }
+
+.btn {
+	background-color: #458B79;
+	color: white;
+}
+
+.btn:hover {
+	color: white;
+}
+
 .header h6 {
 	color: #05292D;
 	font-size: 40px;
