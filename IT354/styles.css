@@ -1,0 +1,57 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	background-color: #EBFDFF;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid grey;
+}
+
+.header h2 {
+	color: #458B79;
+	font-size: 20px;
+	align-self: center;
+	margin: 0px 0px 10px;
+	font-family: 'Anton', sans-serif;
+}
+
+h3 {
+	color: #458B79;
+	font-family: 'Anton', sans-serif;
+}
+.header h6 {
+	color: #05292D;
+	font-size: 40px;
+}
+
+.website-purpose {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.website-purpose p {
+	color: black;
+	font-size: 16px;
+}
+
+.website-purpose h1 {
+	font-size: 25px;
+}
+
+.btn-primary {
+	width: 150px;
+	margin-bottom: 10px;
+}
+
+.w-25 {
+	width: 250px;
+	text-align: center;
+}
+
+li {
+	font-size: 16px;
+}

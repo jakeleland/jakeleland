@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel='stylesheet' href='styles.css'>
+	<script src="script.js"></script>
+	<meta charset="UTF-8">
+	<title>First Assignment</title>
+</head>
+<body>
+<div class="container">
+	<div>
+		<h3>Values & Types</h3>
+		<ul>
+			<li>Numbers</li>
+			<p>Numbers can be added, multiplied, divided in javascript. They can hold anything up to 2.998e8.</p>
+			<li>Infinity</li>
+			<p>Infinity is used as a numeric value that represents infinity.</p>
+			<li>NaN</li>
+			<p>NaN is used to represent a value that is not-a-number.</p>
+			<li>String</li>
+			<p>A string is a sequence of characters that can be set using double quotes "", single quotes '', or backticks ``.</p>
+		</ul>
+	</div>
+	<div>
+		<h3>Unary Operators</h3>
+		<ul>
+			<li>typeof</li>
+			<p>There are 9 different return values of typeof but the 4 major return values are number, string, boolean, and undefined. I added three buttons below that return all 4 of those types using alert. Typeof will return number if the parameters are a number such as typeof 5, a string if parameters is a string such as typeof "hello world", a boolean if parameters are true / false, and undefined if the parameters are undeclared. There are also return values such as symbol, function, bigint, null, object, and function.</p>
+			<button class="btn" onclick="number()">Number</button>
+			<button class="btn" onclick="string()">String</button>
+			<button class="btn" onclick="boolean()">Boolean</button>
+			<button class="btn" onclick="undefinedf()">Undefined</button>
+			<li>Unary plus(+) & Unary negation(-)</li>
+			<p>The syntax for the Unary plus is a + before a variable, number, null, or boolean. An example of this would be +10 // 10, it also can turn a string into a number +'10' // 10 or +true will return 1. The Unary negation is a - before the variable, number, null, or boolean and is used in the same way besides it turns the number into a negative.</p>
+			<li>Logical Not(!)</li>
+			<p>The logical not operation ! returns a boolean. !true would return false and !false would return true. !'' would return true and !'hello' would return false because it is the opposite.</p>
+		</ul>
+	</div>
+	<div>
+		<h3>Hoisting</h3>
+		<ul>
+			<li>Hoisting</li>
+			<p>Hoisting is used to declare a variable at the top of the script in javascript. You have to initialize the variable at the top of the script so that the rest of the page can use it. If you do not hoist the variable at the top of the script you will not be able to use it until after it is initialized or it will return undefined..</p>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
