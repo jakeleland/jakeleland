@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel='stylesheet' href='styles.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<script src="script.js"></script>
 	<meta charset="UTF-8">
-	<title>First Website</title>
+	<title>IT 354 Website</title>
 </head>
+<script>
+	$(function(){
+		$("#header").load("nav.html");
+	});
+</script>
+<div id="header"></div>
 <body>
-	<div class="container">
+	<div class="home-img-container">
+		<img class="home-img" src=img/home-img2.jpg>
 		<div class="header">
 			<h6>Jake Leland</h6>
 			<h2>IT 354 Spring 2020</h2>
+			<p>A Javascript Tutorial</p>
 		</div>
 	</div>
-	<div class="container">
-		<div class="website-purpose">
-			<p>This website will be used as a tutorial of all of the Javascript I will learn in IT 354.</p>
-			<div class="w-20">
-				<h1>First assignment</h1>
-				<a class="btn" href="firstassignment.html" role="button">First Assignment</a>
-				<a class="btn" href="https://youtu.be/MW_o0p1kJ-U" role="button">First Video</a>
-			</div>
-		</div>
-	</div>
+	<!--<div class="container">-->
+		<!--<div class="website-purpose">-->
+			<!--<p>This website will be used as a tutorial of all of the Javascript I will learn in IT 354. In the first assignment we talked about values and types, which include numbers, infinity, NaN, and strings. We also talked about Unary Operators which include unary plus(+) & unary negation(-), and logical not(!). The last part of the first assigment was Hoisting which is where you have to initialize the variable at the top of the script so that the rest of the page can use it. </p>-->
+		<!--</div>-->
+	<!--</div>-->
+
 </body>
 </html>

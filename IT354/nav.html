@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-green">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="container">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="assignmentsDropdownMenuLink" role="button" data-toggle="dropdown">
+							Assignments
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="firstassignment.html">First Assignment</a>
+							<a class="dropdown-item" href="secondassignment.html">Second Assignment</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="videoDropdownMenuLink" role="button" data-toggle="dropdown">
+							Videos
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" data-toggle="modal" data-target="#videoOne">First Video</a>
+							<a class="dropdown-item" data-toggle="modal" data-target="#videoTwo">Second Video</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="articleDropdownMenuLink" role="button" data-toggle="dropdown">
+							Articles
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="secondarticle.html">Second Article</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<body>
+
+
+<div class="modal fade" id="videoOne">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Video One</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<iframe class="video" width="470" height="300" src="https://www.youtube.com/embed/MW_o0p1kJ-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="videoTwo">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Video Two</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<iframe width="470" height="300" src="https://www.youtube.com/embed/9RqxnkPX7UI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
