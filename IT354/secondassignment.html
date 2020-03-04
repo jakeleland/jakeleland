@@ -7,7 +7,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
 	<script src="script.js"></script>
 	<meta charset="UTF-8">
-	<title>First Website</title>
+	<title>Functions</title>
 </head>
 <script>
 	$(function(){
@@ -23,49 +23,56 @@
 		<ul>
 			<li>Named Functions</li>
 			<p>Named functions are declared with the function keyword and then the function name then the parameters of the function. Named functions are not executed immediately but are executed when the function is called on. An example of a named function is</p>
-			<p>function functionName(a) { <br/>
+			<p class="code">function functionName(a) { <br/>
 				return a; <br/>
 				} <br/>
+			</p><p>
 				Here you can see that the function is declared with the function keyword. Next we named the function functionName. The parameters of the function is a and it is returned in the body of the function.
 			</p>
 			<li>Function Expression</li>
 			<p>Another example of a function is a function expression. These functions are stored in a variable. Then later in your code you can use the variable as a function.</p>
-			<p>var z = function (a) { <br/>
+			<p class="code">var z = function (a) { <br/>
 				return a; <br/>
 				} <br/>
+			</p>
+			<p>
 				Here you can see that the function is stored into the variable z. We still need the function keyword but then we don't need a name for the function because the variable is the name. It also has a parameter a and it is returned in the body of the function.
 			</p>
 			<li>Arrow Functions</li>
 			<p>An arrow function is the shortest way to write a function as you don't need the function keyword, return, and the curly brackets that both of the other functions use. Arrow functions are not hoisted so you will have to define them before use. The function could be as simple as this.</p>
-			<p> const z = (a) => a; <br/>
+			<p class="code"> const z = (a) => a; <br/>
+			</p>
+			<p>
 				The variable z gets assigned the function with parameters a and the function will return a. Another way to write this as an arrow function is <br/>
-				const x = (a) => { return a }; <br/>
+				<span class="code"> const x = (a) => { return a }; </span><br/>
 			</p>
 		</ul>
 		<h3>What else can you do with functions?</h3>
 		<ul>
 			<li>Optional Arguments</li>
 			<p>Optional arguments allow named parameters to be initialized with default values. An example of this would be</p>
-			<p>function functionName(a, b = 10) { <br/>
+			<p class="code"> function functionName(a, b = 10) { <br/>
 				return a * 10; <br/>
 				} <br/>
 				console.log(functionName(5)) <br/>
 				console.log(functionName(5, 5)) <br/>
+			</p><p>
 				In the first console.log you will multiply 5 times 10 because there was not a second parameter. In the second console.log you will get 25 because the second parameter 10 gets overridden by 5.
 			</p>
 			<li>Rest Parameters</li>
 			<p>Rest parameters allow any number of parameters as an array.</p>
-			<p>function functionName(a, ...moreParams) { <br/>
+			<p class="code">function functionName(a, ...moreParams) { <br/>
 				console.log(a) <br/>
 				console.log(moreParams) <br/>
 				} <br/>
 				functionName("one", "two", "three", "four") <br/>
-			console.log(a) will return one while console.log(moreParams) will return the rest of the parameters that have been enters so two, three, four.</p>
+
+			</p><p><span class="code">console.log(a)</span> will return one while console.log(moreParams) will return the rest of the parameters that have been enters so two, three, four.</p>
 			<li>Scope</li>
 			<p>There are two types of scope in javascript global scope and local scope. If a variable is declared outside of a function is it global and any functions can access it. If a variable is declared inside of a variable it will be in the functions scope and code outside of the function will not be able to use that variable.</p>
 			<li>Nested Functions</li>
 			<p>A nested function is just what it sounds like a function inside of another function. The scope of these nested functions is that the functions have access to the variables above them.</p>
-			<p>function addItself(a) { <br/>
+			<p class="code">function addItself(a) { <br/>
 				var num = a; <br/>
 				function plus() { <br/>
 				num += a; <br/>
@@ -74,6 +81,7 @@
 				console.log(num); <br/>
 				} <br/>
 				addItself(5); <br/>
+			</p><p>
 				This function will set num to 5 and then go into the plus function and add another 5 to num. The function plus can still access the a parameter even though it has no parameters itself. The output of this function will be the number the function takes times 2.
 			</p>
 		</ul>

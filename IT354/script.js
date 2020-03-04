@@ -48,15 +48,69 @@
 // functionName("one", "two", "three","four");
 
 
+// function addItself(a) {
+// 	var num = a;
+// 	function plus() {
+// 		num += a;
+// 	}
+// 	plus();
+// 	console.log(num);
+// }
+//
+//
+// addItself(30);
 
-function addItself(a) {
-	var num = a;
-	function plus() {
-		num += a;
-	}
-	plus();
-	console.log(num);
+
+var person = new Object();
+
+person.firstname = 'Jake';
+
+person.lastname = 'Leland';
+
+person.age = 22;
+
+console.log("My first name is " + person.firstname +"! My last name is " +person.lastname + " and I'm " +person.age +" years old!");
+
+
+const friend = {
+	firstname: 'Joe',
+	lastname: 'Smith',
+	age: 23
+};
+
+console.log("My first name is " + friend['firstname'] +"! My last name is " +friend['lastname'] + " and I'm " +friend['age'] +" years old!");
+
+
+var car = {color: 'blue', wheels: 4, engine: {cylinders: 4, size: 2}, weight: '2 tons'};
+
+console.log(car['engine']['size']);
+
+function Person(first, last, age, eye) {
+	this.firstName = first;
+	this.lastName = last;
+	this.age = age;
+	this.eyeColor = eye;
+
+	console.log(first, last, age, eye)
 }
 
+Person('jake','leland',22,'blue');
 
-addItself(30);
+class points {
+	constructor(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	static subtract(a, b) {
+		const c = a.x - b.x;
+		const d = a.y - b.y;
+
+		return  c + d;
+	}
+}
+
+const p1 = new points(5, 5);
+const p2 = new points(5, 5);
+
+console.log(points.subtract(p1, p2));
