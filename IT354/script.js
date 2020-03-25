@@ -60,57 +60,81 @@
 //
 // addItself(30);
 
+//
+// var person = new Object();
+//
+// person.firstname = 'Jake';
+//
+// person.lastname = 'Leland';
+//
+// person.age = 22;
+//
+// console.log("My first name is " + person.firstname +"! My last name is " +person.lastname + " and I'm " +person.age +" years old!");
+//
+//
+// const friend = {
+// 	firstname: 'Joe',
+// 	lastname: 'Smith',
+// 	age: 23
+// };
+//
+// console.log("My first name is " + friend['firstname'] +"! My last name is " +friend['lastname'] + " and I'm " +friend['age'] +" years old!");
+//
+//
+// var car = {color: 'blue', wheels: 4, engine: {cylinders: 4, size: 2}, weight: '2 tons'};
+//
+// console.log(car['engine']['size']);
+//
+// function Person(first, last, age, eye) {
+// 	this.firstName = first;
+// 	this.lastName = last;
+// 	this.age = age;
+// 	this.eyeColor = eye;
+//
+// 	console.log(first, last, age, eye)
+// }
+//
+// Person('jake','leland',22,'blue');
+//
+// class points {
+// 	constructor(x, y) {
+// 		this.x = x;
+// 		this.y = y;
+// 	}
+//
+// 	static subtract(a, b) {
+// 		const c = a.x - b.x;
+// 		const d = a.y - b.y;
+//
+// 		return  c + d;
+// 	}
+// }
+//
+// const p1 = new points(5, 5);
+// const p2 = new points(5, 5);
+//
+// console.log(points.subtract(p1, p2));
 
-var person = new Object();
-
-person.firstname = 'Jake';
-
-person.lastname = 'Leland';
-
-person.age = 22;
-
-console.log("My first name is " + person.firstname +"! My last name is " +person.lastname + " and I'm " +person.age +" years old!");
 
 
-const friend = {
-	firstname: 'Joe',
-	lastname: 'Smith',
-	age: 23
-};
-
-console.log("My first name is " + friend['firstname'] +"! My last name is " +friend['lastname'] + " and I'm " +friend['age'] +" years old!");
+// function doSomething() {}
+// doSomething.prototype.firstname = "Jake";
+// console.log(doSomething.prototype);
 
 
-var car = {color: 'blue', wheels: 4, engine: {cylinders: 4, size: 2}, weight: '2 tons'};
+// var a = {b: function () {
+// 		return this.x + this.y;
+// 	}};
+//
+// var g = Object.create(a);
+//
+// g.x = 5;
+// g.y = 10;
+//
+// console.log(g.b());
 
-console.log(car['engine']['size']);
+console.log(this === window);
 
-function Person(first, last, age, eye) {
-	this.firstName = first;
-	this.lastName = last;
-	this.age = age;
-	this.eyeColor = eye;
 
-	console.log(first, last, age, eye)
-}
 
-Person('jake','leland',22,'blue');
 
-class points {
-	constructor(x, y) {
-		this.x = x;
-		this.y = y;
-	}
-
-	static subtract(a, b) {
-		const c = a.x - b.x;
-		const d = a.y - b.y;
-
-		return  c + d;
-	}
-}
-
-const p1 = new points(5, 5);
-const p2 = new points(5, 5);
-
-console.log(points.subtract(p1, p2));

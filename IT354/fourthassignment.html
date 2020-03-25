@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='styles.css'>
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<meta charset="UTF-8">
+	<title>First Website</title>
+</head>
+<script>
+	$(function(){
+		$("#header").load("nav.html");
+	});
+</script>
+
+<div id="header"></div>
+<body>
+<div class="container">
+	<div>
+		<h3>Prototypal Inheritance</h3>
+		<ul>
+			<li>Functions</li>
+			<p class="code">function doSomething(){} <br/>
+				doSomething.prototype.foo = "bar"; <br/>
+				console.log( doSomething.prototype );</p>
+			<p>This would log an object with the key foo and the value would be bar.</p>
+			<li>`this`, in the scope of inheritance</li>
+			<p class="code">class="code">var o = {f: function() { return this.a + this.b; }}; <br/>
+				var p = Object.create(o); <br/>
+				in this case p.a would equal 1; <br/>
+				</p>
+			<li>Syntactic sugar</li>
+			<p>Syntactic sugar is a shortcut provided by the language, which reduces the amount of code that must be written in some common situation.</p>
+		</ul>
+		<h3>`this`</h3>
+		<ul>
+			<li>Window Object</li>
+			<p>In web browsers, the window object is also the global object so it's true but in node js this window object would be false. </p>
+			<p class="code"> console.log(this === window);</p>
+			<li>Global Object</li>
+			<p>This is an example of a global object in javascript.</p>
+			<p>this.a = "Jake"; <br/>
+				console.log(a);  </p>
+
+		</ul>
+
+	</div>
+</div>
+</body>
+</html>

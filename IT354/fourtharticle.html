@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='styles.css'>
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<meta charset="UTF-8">
+	<title>First Website</title>
+</head>
+<script>
+	$(function(){
+		$("#header").load("nav.html");
+	});
+</script>
+
+<div id="header"></div>
+
+<body>
+<div class="article-container">
+	<div class="container">
+		<h3>Monolith vs Microservice</h3>
+		&emsp;&emsp;According to n-ix.com “The monolithic architecture is considered to be a traditional way of building applications. A monolithic application is built as a single and indivisible unit.” [1] This way of coding can be very dangers as updates to your code effect the entire stack. Some strengths of Monolithic Architecture are less cross-cutting concerns, easier debugging and testing, simple to deploy, and simple to develop. These are all very important from a developer’s point of view. Being able to deploy and develop easily makes most developers want to use Monolithic Architecture. There are also a bunch of weaknesses of the Monolithic Architecture these include making changes, scalability, and new technology barriers. Being able to make changes can affect the entire system if there is a bug that could cause a huge issue. <br/>
+		&emsp;The other option we have is Microservices Architecture. According to n-ix.com “While a monolithic application is a single unified unit, a microservices architecture breaks it down into a collection of smaller independent units. These units carry out every application process as a separate service. So all the services have their own logic and the database as well as perform the specific functions.” Some strengths of the Microservices Architecture include independent components, easier understanding, and better scalability. As you can see these are the weaknesses of Monolithic Architecture. A huge thing as a developer to hear is easier to understand. Being able to code the website easily and if there are bugs It will not destroy the entire website. There are also weaknesses of Monolithic Architecture that include extra complexity and testing. Testing is extremely important so for that being a weakness of Microservice Architecture really hurts it.<br/>
+
+		&emsp;For my website I will be using a monolithic architecture because it will be a rather simple application that is easy to launch.
+
+		<br/><br/>
+
+		https://www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/ [1] <br/>
+
+	</div>
+	</div>
+</body>
+</html>
