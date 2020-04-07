@@ -32,7 +32,6 @@
 //
 // x(10, 73);
 
-
 // function myfunction(a, b = 10) {
 // 	console.log(a * b);
 // }
@@ -46,7 +45,6 @@
 // }
 //
 // functionName("one", "two", "three","four");
-
 
 // function addItself(a) {
 // 	var num = a;
@@ -115,12 +113,9 @@
 //
 // console.log(points.subtract(p1, p2));
 
-
-
 // function doSomething() {}
 // doSomething.prototype.firstname = "Jake";
 // console.log(doSomething.prototype);
-
 
 // var a = {b: function () {
 // 		return this.x + this.y;
@@ -133,8 +128,35 @@
 //
 // console.log(g.b());
 
-console.log(this === window);
+// import Cat from '/IT354/cat.js';
+//
+// const cat = new Cat('Rocky', 10);
+// console.log(cat);
 
+// function sayHi() {
+// 	return "Hi, ";
+// }
+// function greeting(hiMessage, name) {
+// 	console.log(hiMessage() + name)
+// }
+//
+// greeting(sayHi, "class!");
+//
+// const returnFunction = function() {
+// 	return function() {
+// 		console.log("Return function.");
+// 	}
+// };
+//
+// const myFunc = returnFunction();
+// myFunc();
 
-
-
+// const array1 = [2,5,8,100,50];
+// const find = array1.find(element => element > 5);
+// const findIndex = array1.findIndex(element => element > 5);
+// console.log(findIndex);
+// const map = array1.map(x => x * 2);
+// console.log(map);
+// console.log(array1.flat());
+// array1.sort();
+// console.log(array1);

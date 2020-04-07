@@ -84,10 +84,6 @@ li {
 	margin-top: 20px;
 }
 
-.article-container {
-	box-shadow: 5px 5px 20px 5px;
-}
-
 .video {
 	box-shadow: 5px 5px 20px 0px;
 }
@@ -158,9 +154,21 @@ li {
 }
 
 .code {
-	color: #734EA0;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	border-radius: 11px;
 }
 
 .article-container {
-	margin: 0px 300px 0px 300px;
+	margin: 0px 200px 0px 200px;
+	box-shadow: 5px 5px 20px 5px;
+}
+
+
+@media only screen and (max-width: 774px) {
+	.article-container {
+		margin: 0px 100px 0px 100px;
+		overflow: hidden;
+	}
 }

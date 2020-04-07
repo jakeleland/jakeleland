@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='styles.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
+	<script src="script.js"></script>
+	<meta charset="UTF-8">
+	<title>Modules / HOF / Array Methods</title>
+</head>
+<script>
+	$(function(){
+		$("#header").load("nav.html");
+	});
+</script>
+
+<div id="header"></div>
+<body>
+<div class="container">
+	<h3>Modules</h3>
+	<ul>
+		<li>Basic Modules</li>
+		<p>Modules are very interesting to use in javascript. They use the keyword import and export. Modules can be very useful for many different things such as different users, cars, and animals. We will first create a file called cat.js using the keywork export to send the data out of cat.js to script.js.</p>
+		<p class="code">
+			export default class Cat { <br/>
+			constructor(name, age) {<br/>
+			this.name = name;<br/>
+			this.age = age;<br/>
+			}<br/>
+			}<br/>
+			export function printName(user) {<br/>
+			console.log(`Cat's name is ${user.name}`)<br/>
+			}<br/>
+			export function printAge(user) {<br/>
+			console.log(`Cat's age is ${user.age}`)<br/>
+			}
+		</p>
+		<p>Next in our main script.js we will use the import keyword to import that data sent from cat.js</p>
+		<p class="code">
+			import Cat from '/IT354/cat.js';<br/>
+			const cat = new Cat('Rocky', 10);<br/>
+			console.log(cat);<br/>
+		</p>
+		<p>This will display in the console the object cat with the name Rocky and age 10.</p>
+	</ul>
+	<h3>Higher Order Functions</h3>
+	<ul>
+		<p>A higher-order function is a function that accepts a function as an argument or returns a function.</p>
+		<p>An example that accepts a function would be :</p>
+		<p class="code">
+			function sayHi() {<br/>
+			return "Hi, ";<br/>
+			}<br/>
+			function greeting(helloMessage, name) {<br/>
+			console.log(helloMessage() + name);<br/>
+			}<br/>
+			greeting(sayHi, "class!");<br/>
+		</p>
+		<p>This will return : Hi, class!</p>
+		<hr/>
+		<p>An example of when it return a function would be : </p>
+		<p class="code">
+			const returnFunction = function() {<br/>
+			return function() {<br/>
+			console.log("Returning a function example!");<br/>
+			}<br/>
+			}<br/>
+			const myFunc = returnFunction();<br/>
+			myFunc();<br/>
+		</p>
+		<p>This will return : Returning a function example!</p>
+	</ul>
+	<h3>Advanced Array Methods</h3>
+	<ul>
+		<p>Array Methods find, findIndex, forEach, map, flat, flatMap, filter, sort, push, unshift, shift, and pop</p>
+		<p>Examples of find, findIndex, forEach : </p>
+		<p class="code">
+			const array1 = [2, 5, 8, 100, 50];<br/>
+			const find = array1.find(element => element > 5);<br/>
+			const findIndex = array1.findIndex(element => element > 5);<br/>
+			console.log(find); // returns 8<br/>
+			console.log(findIndex); // returns 2<br/>
+		</p>
+		<p>Example of forEach : </p>
+		<p class="code">
+			const array1 = [2, 5, 8, 100, 50];<br/>
+			array1.forEach(element => console.log(element)); // returns 2, 4, 8, 100, 50<br/>
+		</p>
+		<p>Example of map : </p>
+		<p class="code">
+			const array1 = [2, 5, 8, 100, 50];<br/>
+			const map = array1.map(x => x * 2);
+			console.log(map); // returns [4, 10, 16, 200, 100]
+		</p>
+		<p>Example of flat : </p>
+		<p class="code">
+			const flat = [1, 2, [3, 4]]; <br/>
+			flat.flat(); // returns [1, 2, 3, 4]<br/>
+		</p>
+		<p>Example of sort : </p>
+		<p class="code">
+			const array1 = [2, 5, 8, 100, 50];<br/>
+			array1.sort();<br/>
+			console.log(array1); // [100, 2, 5, 50, 8]<br/>
+		</p>
+	</ul>
+
+</div>
+
+</body>
+</html>
